@@ -15,7 +15,7 @@ A simple recipe web app that shows random meals and full instructions. Built wit
 - [TheMealDB API](https://www.themealdb.com)
 
 ## Live Demo
-[https://recipe-guidebook.netlify.app/]
+https://recipe-guidebook.netlify.app/
 
 ## License
 ## License
