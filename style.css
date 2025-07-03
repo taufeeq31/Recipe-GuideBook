@@ -8,7 +8,9 @@
 }
 /* Body */
 :root{
-    --bg-color: #f9e79f;
+    --bg-color: #008a7a;
+    --primarty-color: #D9E1CC;
+    --header-bg-color: #EFDFBB;
 }
 body{
     background-color: var(--bg-color);
@@ -20,14 +22,17 @@ body{
 }
 /* Header */
 .header{
-    background-color: #191919;
-    color: #fafafa;
+    background-color: rgb(37, 37, 37);
+    color: var(--header-bg-color);
     padding: 25px;
     display: flex;
     align-items: center;
     z-index: 1000;
     position: fixed;
     width: 100%;
+}
+.header h1{
+    margin-left: 3rem;
 }
 /* search  */
 .search{
@@ -38,7 +43,7 @@ body{
     border: 2px solid #fafafa;
     font-size: 16px;
     font-weight: 500;
-    width: 300px;
+    width: 400px;
     color: white;
 }
 
@@ -57,8 +62,8 @@ main{
     width: 18rem;
     border: none;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0.6);
-    background-color: whitesmoke;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0.1);
+    background-color: var(--primarty-color);
     cursor: pointer;
 }
 img{
@@ -76,18 +81,19 @@ img{
 .name{
     font-size: 1.2rem;
     font-weight: 600;
-    color: #191919;
+    color: rgb(37, 37, 37);
     align-self: center;
 }
 .region{
     font-size: 1rem;
-    color: #555;
+    color: rgb(37, 37, 37);
     align-self: center;
+    padding-bottom: 20px;
 }
 /* Footer */
 footer{
     flex-shrink: 0;
-    background-color: #191919;
+    background-color: rgb(37, 37, 37);
     color: white;
     padding: 20px;
     text-align: center;
@@ -114,6 +120,7 @@ footer{
     }
     .card {
         width: calc(50% - 0.5rem);
+
     }
     .name {
         font-size: 1rem;

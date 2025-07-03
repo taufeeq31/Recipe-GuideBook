@@ -6,7 +6,9 @@
 }
 /* Body */
 :root{
-    --bg-color: #f9e79f;
+    --bg-color: #008a7a;;
+    --primarty-color: #D9E1CC;
+    --header-bg-color: #EFDFBB;
 }
 body{
     background-color: var(--bg-color);
@@ -18,8 +20,8 @@ body{
 }
 /* Header */
 .header{
-    background-color: #191919;
-    color: #fafafa;
+    background-color:  rgb(37 37 37);
+    color: var(--header-bg-color);
     padding: 25px;
     display: flex;
     /* align-self: center; */
@@ -38,17 +40,17 @@ main{
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 2rem;
-    background-color: #fafafa;
+    background-color:var(--primarty-color);
     width: 100%;
     height: 400px;
     border-radius: 8px;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0.1);
     overflow-x: auto;      /* Enable horizontal scroll */
     overflow-y: hidden;    /* Hide vertical scroll */
     white-space: nowrap;   /* Prevent line breaks for inline/inline-block children */
 }
 .image-container img {
-    width: 70%;
+    width: 24rem;
     height: 90%;
     object-fit: cover;
     border-radius: 10px;
@@ -87,7 +89,7 @@ main{
 /* Footer */
 footer{
     flex-shrink: 0;
-    background-color: #191919;
+    background-color: rgb(37, 37, 37);
     color: white;
     padding: 20px;
     text-align: center;
