@@ -11,6 +11,11 @@ axios.get("https://www.themealdb.com/api/json/v1/1/random.php")
         console.error("Error fetching random recipe:", error);
     });
 
+const headingName = document.querySelector('.header h1');
+headingName.addEventListener("click", () => {
+    location.reload();
+});
+
 const createRecipeCard = (recipe) => {
     const card = createEle('div');
     card.classList.add('card');

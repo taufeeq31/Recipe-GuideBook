@@ -33,6 +33,7 @@ body{
 }
 .header h1{
     margin-left: 3rem;
+    cursor: pointer;
 }
 /* search  */
 .search{
@@ -46,7 +47,27 @@ body{
     width: 400px;
     color: white;
 }
-
+.image-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+.image-box img{
+    width: 80%;
+    height: 500px;
+    object-fit:cover;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0.1);
+}
+.trending{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: -6rem;
+}
 /* Card */
 main{
     padding: 8rem 4rem 8rem 4rem;
