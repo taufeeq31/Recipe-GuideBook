@@ -8,13 +8,43 @@
 </head>
 <body>
     <header class="header">
+        <img src="./assets/Logo.png" alt="">
         <h1>Recipe Book</h1>
+        <h4>ABOUT</h4>
         <input type="text" class="search" placeholder="Search for recipes..." id="search">
     </header>
-    <div class="image-box">
-        <img src="assets/Screenshot 2025-07-04 at 3.11.43 AM.png" alt="Loading...">
+    <div class="hero-box">
+        <div class="hero-box-text">
+            <h2>
+                Delicious Recipes at your fingerTip
+            </h2>
+            <div>
+                Explore thousands of easy-to-follow recipe made for everyday cooking.
+            </div>
+            <button class="search-btn">Search recipe</button>
+        </div>
+        <img src="./assets/3d Donut Bg removed_small.png" alt="">
     </div>
-    <h2 class="trending">Trending Recipes</h2>
+    <h2 class="categories-heading">categories</h2>
+    <div class="categories">
+        <div class="breakfast">
+            <img src="/assets/BREAKFAST_small.jpg" alt="Breakfast">
+            <p>Breakfast</p>
+        </div>
+        <div class="healthy">
+            <img src="/assets/LUNCH_small.jpg" alt="Breakfast">
+            <p>Healthy</p>
+        </div>
+        <div class="snacks">
+            <img src="/assets/SNACKS_small.jpg" alt="Breakfast">
+            <p>Snacks</p>
+        </div>
+        <div class="dinner">
+            <img src="/assets/DINNER_small.jpg" alt="Breakfast">
+            <p>Dinner</p>
+        </div>
+    </div>
+    <h2 class="explore">Explore</h2>
     <main id="main"> 
         <div class="card-container" id="card-container"></div>
     </main>
@@ -24,6 +54,6 @@
     </footer>
     <script type="module" src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
+    <script src="./searchRedirect.js"></script>
 </body>
 </html>

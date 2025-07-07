@@ -10,7 +10,9 @@ axios.get("https://www.themealdb.com/api/json/v1/1/random.php")
         console.error("Error fetching random recipe:", error);
     });
 
-
+document.querySelector(".header img").addEventListener("click",()=>{
+    window.location.href='index.html';
+})
 
 const recipePage = (recipe) => {
     document.getElementById('recipe-name').innerText = recipe.strMeal;

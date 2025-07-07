@@ -13,8 +13,9 @@ axios.get("https://www.themealdb.com/api/json/v1/1/random.php")
 
 const headingName = document.querySelector('.header h1');
 headingName.addEventListener("click", () => {
-    location.reload();
+    window.location.href = 'index.html';
 });
+
 
 const createRecipeCard = (recipe) => {
     const card = createEle('div');
@@ -71,10 +72,17 @@ async function displayRandomRecipes(count) {
     }
 }
 
-displayRandomRecipes(40);
+displayRandomRecipes(8);
 
 //Search functionality
 const searchInput = document.getElementById('search');
+
+document.querySelector(".search-btn").addEventListener("click", () => {
+    window.location.href = 'search_page.html';
+
+});
+
+
 searchInput.addEventListener('keyup', async (event) => {
     const searchTerm = event.target.value.toLowerCase().trim();
 

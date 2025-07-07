@@ -8,9 +8,9 @@
 }
 /* Body */
 :root{
-    --bg-color: #008a7a;
-    --primarty-color: #D9E1CC;
-    --header-bg-color: #EFDFBB;
+    --bg-color: #E1DBD3;
+    --primarty-color: #763A3A;
+    --header-text: #2C2C2C;
 }
 body{
     background-color: var(--bg-color);
@@ -21,9 +21,13 @@ body{
     flex-direction: column;
 }
 /* Header */
+.header img{
+    width: 50px;
+}
+
 .header{
-    background-color: rgb(37, 37, 37);
-    color: var(--header-bg-color);
+    background-color: var(--bg-color);
+    color: var(--header-text);
     padding: 25px;
     display: flex;
     align-items: center;
@@ -32,43 +36,120 @@ body{
     width: 100%;
 }
 .header h1{
-    margin-left: 3rem;
+    margin-left: 1rem;
     cursor: pointer;
+
+}
+.header h4{
+    margin-left: auto ;
+    margin-right: 20px;
 }
 /* search  */
 .search{
-    margin-left:auto;
+    display: flex;
     background-color: transparent;
     border-radius: 8px;
     padding: 10px;
-    border: 2px solid #fafafa;
+    border: 2px solid #2C2C2C;
     font-size: 16px;
     font-weight: 500;
     width: 400px;
-    color: white;
+    color: #2C2C2C;
 }
-.image-box{
+/* hero-section */
+.hero-box {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-top: 8rem;
     margin-bottom: 2rem;
+    padding: 0 2rem;
 }
-.image-box img{
-    width: 80%;
-    height: 500px;
-    object-fit:cover;
-    border-radius: 8px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0.1);
+
+.hero-box-text {
+    max-width: 50%;
 }
-.trending{
+
+.hero-box-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-box-text div {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-box img {
+    max-width: 40%;
+    height: auto;
+}
+
+.hero-box button {
+    background-color: #8166CC;
+    border: none;
+    padding: 12px 24px;
+    margin-top: 8px;
+    border-radius: 10px;
+    color: #fafafa;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-box button:hover {
+    background-color: #6a50a1;
+}
+
+/* categories */
+.categories-heading {
     text-align: center;
-    color: white;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--header-text);
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 30px;
+}
+
+.categories > div {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.categories > div:hover {
+    transform: scale(1.05);
+}
+
+.categories img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.categories p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--header-text);
+}
+
+/* Card */
+.explore{
+    text-align: center;
+    color: var(--header-text);
     font-size: 2.5rem;
     margin-top: 1rem;
     margin-bottom: -6rem;
 }
-/* Card */
 main{
     padding: 8rem 4rem 8rem 4rem;
     flex: 1 0 auto;
@@ -84,7 +165,7 @@ main{
     border: none;
     border-radius: 8px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0.1);
-    background-color: var(--primarty-color);
+    background-color: #763A3A;
     cursor: pointer;
 }
 img{
@@ -102,12 +183,12 @@ img{
 .name{
     font-size: 1.2rem;
     font-weight: 600;
-    color: rgb(37, 37, 37);
+    color: var(--bg-color);
     align-self: center;
 }
 .region{
     font-size: 1rem;
-    color: rgb(37, 37, 37);
+    color: var(--bg-color);
     align-self: center;
     padding-bottom: 20px;
 }
@@ -120,6 +201,8 @@ footer{
     text-align: center;
     width: 100%;
     z-index: 1000;
+    transform: translateY(100%)
+    
 }
 
 /* Responsive Design */
@@ -132,7 +215,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     main {
         padding: 8rem 1rem 8rem 1rem;
     }
@@ -140,8 +223,33 @@ footer{
         gap: 1rem;
     }
     .card {
-        width: calc(50% - 0.5rem);
+        width: calc(50% - 1rem);
 
+    }
+    .header h1{
+    cursor: pointer;
+    font-size: 20px;
+    }
+    .header img{
+    width: 35px;
+    }
+    .header h4{
+    margin-left: auto ;
+    margin-right: 20px;
+    font-size: 10px;
+    }
+    .hero-box img {
+    max-width: 40%;
+    height: auto;
+    display: none;
+    }
+    .hero-box-text{
+        text-align: center;
+    }
+
+    .categories img {
+    width: 100px;
+    height: 100px;
     }
     .name {
         font-size: 1rem;
